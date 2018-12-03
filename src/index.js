@@ -22,6 +22,7 @@ class RequestViewWp extends Component {
             requestSubTitle,
             requestViewTable,
             pharmacyTitleColor,
+            submitClick,
             suggest
         } = this.props;
         return(
@@ -31,9 +32,9 @@ class RequestViewWp extends Component {
                         <div className="create-header">
                             <span className="umuti-create-title">{viewTitle}</span>
                             <span>
-                                <span><button className="white-btn"><span className={buttonIconOne}></span>{buttonOneText}</button></span>
-                                <span><button className="white-btn"><span className={buttonIconTwo}></span>{buttonTwoText}</button></span>
-                                <span><button className="white-btn" onClick={suggest}><span className={buttonIconThree}></span>{buttonThreeText}</button></span>
+                                {/* <span><button className="white-btn"><span className={buttonIconOne}></span>{buttonOneText}</button></span> */}
+                                <span><button className="white-btn" onClick={() => submitClick()}><span className={buttonIconTwo}></span>{buttonTwoText}</button></span>
+                                <span><button className="white-btn" onClick={()=> suggest()}><span className={buttonIconThree}></span>{buttonThreeText}</button></span>
                             </span>
                         </div>
                         <div className="row reset-row create-form form-container">
