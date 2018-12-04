@@ -12,18 +12,14 @@ class RequestViewWp extends Component {
             umutiView,
             wrapperClass,
             viewTitle,
-            buttonOneText,
-            buttonTwoText,
             buttonThreeText,
-            buttonIconOne,
-            buttonIconTwo,
             buttonIconThree,
             requestTitle,
             requestSubTitle,
             requestViewTable,
             pharmacyTitleColor,
-            submitClick,
-            suggest
+            suggest,
+            sendBtn
         } = this.props;
         return(
             <div className={`row reset-row create-wrapper orderWrapper ${umutiView}`}>
@@ -32,8 +28,7 @@ class RequestViewWp extends Component {
                         <div className="create-header">
                             <span className="umuti-create-title">{viewTitle}</span>
                             <span>
-                                {/* <span><button className="white-btn"><span className={buttonIconOne}></span>{buttonOneText}</button></span> */}
-                                <span><button className="white-btn" onClick={() => submitClick()}><span className={buttonIconTwo}></span>{buttonTwoText}</button></span>
+                                {sendBtn}
                                 <span><button className="white-btn" onClick={()=> suggest()}><span className={buttonIconThree}></span>{buttonThreeText}</button></span>
                             </span>
                         </div>
