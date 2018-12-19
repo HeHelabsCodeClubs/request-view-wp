@@ -39,7 +39,7 @@ class RequestViewWp extends Component {
                                 {requestViewTable}
                             </div>
                             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-reset bottom-total-wrapper">
-                                <div className="row">
+                                <div className="row reset-row">
                                     <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-reset bottom-subtotal">
                                         <div className="row col-lg-4 col-md-4 col-sm-6 col-xs-12 offset-lg-8 col-md-8 col-sm-6">
                                             <div className="col-lg-5 col-md-5 col-sm-5 col-xs-5 title">SUBTOTAL</div>
