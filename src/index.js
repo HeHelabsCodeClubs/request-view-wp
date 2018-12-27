@@ -12,13 +12,10 @@ class RequestViewWp extends Component {
             umutiView,
             wrapperClass,
             viewTitle,
-            buttonThreeText,
-            buttonIconThree,
             requestTitle,
             requestSubTitle,
             requestViewTable,
             pharmacyTitleColor,
-            suggest,
             sendBtn
         } = this.props;
         return(
@@ -29,7 +26,6 @@ class RequestViewWp extends Component {
                             <span className="umuti-create-title">{viewTitle}</span>
                             <span>
                                 {sendBtn}
-                                <span><button className="white-btn" onClick={()=> suggest()}><span className={buttonIconThree}></span>{buttonThreeText}</button></span>
                             </span>
                         </div>
                         <div className="row reset-row create-form form-container">
